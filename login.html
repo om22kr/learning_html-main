@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <header>
+        <h1>About Us</h1>
+        <nav>
+        
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="products.html">Products</a> |
+            <a href="services.html">Services</a> |
+            <a href="contact.html">Contact</a> |
+            <a href="audio_video.html">Audio/Video</a> |
+            <a href="form.html">Form</a> | 
+            <a href="login.html">Login</a>
+
+        </nav>
+    </header>
+
+    <form action="/login-endpoint" method="POST" autocomplete="on">
+  <h2>Account Login</h2>
+
+  <!-- Username / Email Field -->
+  <div class="form-group">
+    <label for="username">Username or Email</label>
+    <input 
+      type="text" 
+      id="username" 
+      name="username" 
+      autocomplete="username" 
+      required 
+      placeholder="Enter your username or email"
+    />
+  </div>
+
+  <!-- Password Field -->
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input 
+      type="password" 
+      id="password" 
+      name="password" 
+      autocomplete="current-password" 
+      required 
+      placeholder="Enter your password"
+    />
+  </div>
+
+  <!-- Keep Me Logged In / Remember Me -->
+  <div class="form-checkbox">
+    <input type="checkbox" id="remember" name="remember" value="yes" />
+    <label for="remember">Remember me on this device</label>
+  </div>
+
+  <!-- Submit Button -->
+  <button type="submit">Sign In</button>
+
+  <!-- Alternative Actions -->
+  <div class="form-links">
+    <a href="/forgot-password">Forgot password?</a>
+    <p>Don't have an account? <a href="/signup">Sign up here</a></p>
+  </div>
+</form>
+
+
+    
+
+</body>
+</html>
